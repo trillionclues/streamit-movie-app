@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>streamIT Movie App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo-search">
+          <img src="./images/logoipsum-logo-35.svg" alt="" />
+          <form action="#">
+            <input
+              type="search"
+              name="search"
+              id="form-control"
+              placeholder="Search something here..."
+            />
+          </form>
+        </div>
+        <div class="nav-profile">
+          <i class="fa-regular fa-bell"></i>
+          <div class="avatar">
+            <p><span>Hello </span>Pekar Richards</p>
+            <img src="./images/face-avatar.jpg" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <!-- main section starts -->
+      <div class="main-section">
+        <!-- left naviagation -->
+        <div id="left-nav">
+          <div class="action-items">
+            <i class="fas fa-regular fa-video"></i>
+            <i class="fsa fa-regular fa-chart-mixed"></i>
+            <i class="fas fa-regular fa-clock-rotate-left"></i>
+            <i class="fas fa-regular fa-glasses"></i>
+            <i class="fas fa-regular fa-user-gear"></i>
+            <i class="fas fa-regular fa-gear"></i>
+          </div>
+          <div class="action-exit">
+            <i class="fas fa-regular fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+
+        <!-- collection -->
+        <div id="movies">
+          <h3>My Collection</h3>
+          <div class="movie-nav">
+            <p>Favorite Movies</p>
+            <div class="movie-select">
+              <select name="movie" class="form-control" id="dropdown">
+                <option disabled selected value>Popular Movies</option>
+                <option value="drama">Drama Movies</option>
+                <option value="anime">Anime Movies</option>
+              </select>
+              <button id="add-movies">Add New Movies</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
