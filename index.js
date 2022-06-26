@@ -13,12 +13,12 @@ const form = document.getElementById('form')
 const main = document.getElementById('movie-list')
 const search = document.getElementById('search')
 
-// DOM navigation elements
+// page navigation elements
 const prevMovie = document.getElementById('prev')
 const nextMovie = document.getElementById('next')
 const currentMovie = document.getElementById('current')
 
-// define elements startPoint
+// define page elements startPoint
 let prevPage = 3
 let currentPage = 1
 let nextPage = 2
@@ -47,7 +47,7 @@ function fetchMovies(url) {
     })
 }
 
-// DISPLAY MOVIES FETCHED
+// INSERT MOVIES FETCHED INTO DOM
 function displayMovies(data) {
   main.innerHTML = ''
 
@@ -58,7 +58,7 @@ function displayMovies(data) {
     movieDetail.innerHTML = `
    <img src="${
      poster_path ? imgUrl + poster_path : 'http://via.placeholder.com/1080x1580'
-   } alt="${title}">
+   }" alt="${title}">
 
    <div class="movie-info">
     <h3>${title}</h3>
