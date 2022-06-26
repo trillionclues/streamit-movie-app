@@ -70,7 +70,7 @@ function displayMovies(data) {
     <h3>Overview</h3>
     ${overview}
     </br>
-        <button class"movie_modal" id="${id}">Close Overview</button>
+        <button class"movie_modal" id="${id}">Watch Trailer</button>
    </div>
   
    `

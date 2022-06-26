@@ -189,7 +189,7 @@ main {
   margin: 10px 30px;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: orange;
 }
 
 .page {
@@ -214,7 +214,7 @@ main {
 .movie {
   width: 300px;
   margin: 1rem;
-  border-radius: 3px;
+  border-radius: 10px;
   box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
   background-color: #113049;
   position: relative;
@@ -257,29 +257,53 @@ main {
   color: red;
 }
 
-.movie:hover .overview {
-  transform: translateY(0);
-}
-
 /* movie modal */
 .overview {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
-  padding: 1rem;
+  background-color: #185c93;
+  padding: 0.9rem;
   max-height: 100%;
   transform: translateY(101%);
-  transition: transform 0.3s ease-in;
+  transition: transform 0.2s ease-in;
+  color: #f2f2f2;
 }
-.movie-modal {
-  background-color: orange;
-  color: white;
+
+.movie:hover .overview {
+  transform: translateY(0);
+  text-align: center;
+}
+
+.overview button {
+  margin-top: 10px;
   font-size: 16px;
-  font-weight: bold;
-  border: 0;
+  padding: 7px 9px;
   border-radius: 50px;
+  /* font-weight: bold; */
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+  color: #113049;
+}
+
+.overview h3 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 20px;
+  background-color: orange;
+  padding: 7px 9px;
+  border-radius: 50px;
+  color: #113049;
+}
+
+.movie_modal {
+  background-color: orange;
+  /* position: relative; */
+  color: #113049;
+  font-size: 16px;
+  border: 0;
   padding: 10px 20px;
   margin-top: 5px;
 }
