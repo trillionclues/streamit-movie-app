@@ -1,7 +1,7 @@
 // TheMovieDB
 require('dotenv').config()
 
-const apiKey = process.env.SECRET_KEY
+const apiKey = 'api_key' + process.env.SECRET_KEY
 const baseUrl = 'https://api.themoviedb.org/3'
 const queryUrl = baseUrl + '/discover/movie?sort_by=popularity.desc&' + apiKey
 const imgUrl = 'https://image.tmdb.org/t/p/w500'
