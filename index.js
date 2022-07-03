@@ -11,7 +11,7 @@ const searchUrl = baseUrl + '/search/movie?' + apiKey
 
 // define DOM elements
 // const form = document.getElementById('form')
-const form = document.querySelector('.form')
+const form = document.getElementById('form')
 const main = document.getElementById('movie-list')
 const search = document.getElementById('search')
 
@@ -145,14 +145,14 @@ function pageCall(page) {
 }
 
 // form Queries
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault()
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
 
-//   // console.log(e)
-//   const searchQuery = search.value
-//   if (searchQuery) {
-//     fetchMovies(searchUrl + '&query=' + searchQuery)
-//   } else {
-//     fetchMovies(queryUrl)
-//   }
-// })
+  // console.log(e)
+  const searchQuery = search.value
+  if (searchQuery) {
+    fetchMovies(searchUrl + '&query=' + searchQuery)
+  } else {
+    fetchMovies(queryUrl)
+  }
+})
